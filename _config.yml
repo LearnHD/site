@@ -1,33 +1,19 @@
-baseurl: "/" # The subpath of your site. Use "" if you're hosting a blog at the root level.
-url: "http://ellekasai.github.io" # the base hostname & protocol for your site
-title: "Co-Lab"
+# Site settings
+title: My Jekyll Blog
+description: A blog about interesting things
 
-# This is used by feed.xml. Uncomment if you want to use it.
-# description: "..."
-
-gems:
-  - jemoji
-exclude:
-  - "README.md"
-  - "CHANGELOG.md"
-  - "CNAME"
-  - "Gemfile"
-  - "Gemfile.lock"
-permalink: :title
+# Author configuration
 defaults:
   -
     scope:
-      path: ""
-      type: "pages"
+      path: ""      # Apply to all files
+      type: "posts" # Apply specifically to posts
     values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+      author:
+        name: "Site Default Author"
+        bio: "Default author for the blog"
+        email: "default@example.com"
+        twitter: ""
+        linkedin: ""
 
-# Excerpt settings
-excerpt_separator: <!--more-->
-show_excerpts: true
+# Additional site configuration can be added here
